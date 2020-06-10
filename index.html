@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="./styles.css">
+    <script type="text/javascript" src="index.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors!</title>
+</head>
+
+<body>
+    <header>
+        <h1 id="page">Rock Paper Scissors!</h1>
+    </header>
+
+    <div class="score-board">
+        <div class="float-left">
+            <div id="user-score-label" class="badge">User</div>
+            <div class="font-size-fifty" id="user-score">0</div>
+        </div>
+
+        <div class="float-right">
+            <div id="computer-score-label" class="badge">Computer</div>
+            <div class="font-size-fifty" id="cpu-score">0</div>
+        </div>
+    </div>
+    <div class="result">
+        <p id="message">Click on an image to begin the game.</p>
+    </div>
+
+    <div class="choices">
+
+        <div id="rock" class="sentaku">
+            <button onclick="rock()">
+            <img id="rock-img" src="./images/rock.png" alt="rock"></button>
+        </div>
+        <div id="paper" class="sentaku">
+            <button onclick="paper()">
+            <img src="./images/paper.png" alt="paper"></button>
+        </div>
+        <div id="scissors" class="sentaku">
+            <button onclick="scissors()"> <img src="./images/scissors.png" alt="scissors"></button>
+        </div>
+    </div>
+
+    <p class="duel">It's time to d-d-d-d-d-d-d-d-duel!</p>
+    <button class="reset" onclick="reset()">Reset</button>
+</body>
+
+</html
